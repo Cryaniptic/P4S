@@ -15,10 +15,49 @@
   //keywords: ("Typst", "Template", "Journal Article")
 )
 
+= Mission idea
+
+== Who is plants for space?
+
+== Proposed mission
+
+
+
 = Previous missions
 
- 
+== BioSentinel
 
+== AstroBio CubeSat (ABCS)
+
+
+
+= Outline of hardware
+
+== Temperature control
+
+=== Heating
+
+=== Cooling?
+
+== Atmospheric control
+
+== Vibration
+
+== Sensing
+
+=== Imaging
+
+=== Lab on a chip? or other chemical detection
+
+=== Additional sensing capabilities?
+
+Things like radiation sensors, plant health (if this can be measured), atmospheric sensing
+
+= How this mission could be achieved
+
+== Satellite (cube or share on larger sat)
+
+== ISS experiment 
 
 
 #bibliography("./ref.bib")
