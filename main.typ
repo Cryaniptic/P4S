@@ -19,17 +19,44 @@
 
 == Who is plants for space?
 
+Plants for Space is currently experimenting with genetically engineered moss that can have a programmed response to a stimulus. Applications of this technology could be extended to on demand production of medicine on a long duration space mission, reactive/adaptive food production and so on.
+
 == Proposed mission
 
+To test the specimen in a space environment, Plants for Space wishes to transport a sample and test equipment into a microgravity environment. To do this supporting hardware will be needed (covered later in this document).
 
 
 = Previous missions
+This list is not exhaustive and will mostly focus on plant based biological samples, but bacteria and bioscience experiments will be listed for completeness. 
 
 == BioSentinel
+https://www.liebertpub.com/doi/10.1089/ast.2019.2068 \
+
+== GeneSat-1
+
+== PharmaSat
+
+== O/OREAOS
+
+== SporeSat
+
+https://www.eoportal.org/satellite-missions/sporesat#spacecraft
+
+== EcAMSat
 
 == AstroBio CubeSat (ABCS)
 
+== ISS
+VEGGIE-1, 2 & 3. APH (Advanced Plant Habitat)
 
+== EuCROPIS
+
+== Chang'e 4 "biosphere"
+
+== SpaceMoss
+https://2015.igem.org/Team:UNIK_Copenhagen/Description
+
+== ARTEMOSS
 
 = Outline of hardware
 
