@@ -15,6 +15,12 @@
   //keywords: ("Typst", "Template", "Journal Article")
 )
 
+#pagebreak()
+
+#outline()
+
+#pagebreak()
+
 = Mission idea
 
 == Who is plants for space?
@@ -57,6 +63,8 @@ VEGGIE-1, 2 & 3. APH (Advanced Plant Habitat)
 https://2015.igem.org/Team:UNIK_Copenhagen/Description
 
 == ARTEMOSS
+
+#pagebreak()
 
 = Outline of hardware
 
