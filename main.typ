@@ -1,5 +1,7 @@
 #import "@preview/starter-journal-article:0.4.0": article, author-meta
 
+#show heading: it => pad(left: 1em * it.level - 1em, it)
+
 #show: article.with(
   title: "Space hardware for plant samples",
   authors: (
@@ -35,14 +37,17 @@ To test the specimen in a space environment, Plants for Space wishes to transpor
 = Previous missions
 This list is not exhaustive and will mostly focus on plant based biological samples, but bacteria and bioscience experiments will be listed for completeness. 
 
-== BioSentinel
-https://www.liebertpub.com/doi/10.1089/ast.2019.2068 \
+== BioSentinel 2022
+6U CubeSat that explored the effects of deep space radiation on yeast cells. Sat was launched aboard Artemis-1, and ventured into orbit beyond the moon. Yeast cells failed to grow, which the team determined was a result of extended storage pre-mission. @Tabor_2024, @BioSentinel
 
-== GeneSat-1
+== GeneSat-1 2006
+GeneSat-1 was Ames' NASA's first fully automated, self contained biological experiment on a satellite of its size. It tested for gene expression in microscopic organisms using Green Fluorescent Protein. @Kramer_2012
 
-== PharmaSat
+== PharmaSat 2009
+PharmaSat built upon the technology of GeneSat-1, reusing many of the microfluidics and optic systems to test yeast resistance to antifungal agents. 
 
-== O/OREAOS
+== O/OREAOS 2010
+O/OREAOS (Organism/Organic Exposure to Orbital Stresses) was the third small satellite developed by Ames following GeneSat-1 and PharmaSat, designed to measure how well microorganisms adapt and react to the stresses of space, and the stability of organic molecules in space.
 
 == SporeSat
 
