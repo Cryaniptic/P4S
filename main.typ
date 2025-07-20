@@ -25,14 +25,9 @@
 
 = Mission idea
 
-== Who is plants for space?
+To test the specimen in a space environment, Plants for Space wishes to transport a sample and test equipment into a microgravity environment. To do this supporting hardware will be needed (covered later in this document). The sample is expected to be a genetically modified piece of moss (#highlight[get exact species]) that is to express a designed response to a specified stimuli. These are yet to be decided but some early ideas for stimuli (Temperature change) and response (Colour change, growth response, chemical production). The exact mechanisms will need to be simple, lightweight and ideally using existing hardware.
 
-Plants for Space is currently experimenting with genetically engineered moss that can have a programmed response to a stimulus. Applications of this technology could be extended to on demand production of medicine on a long duration space mission, reactive/adaptive food production and so on.
-
-== Proposed mission
-
-To test the specimen in a space environment, Plants for Space wishes to transport a sample and test equipment into a microgravity environment. To do this supporting hardware will be needed (covered later in this document).
-
+The method of transport for the mission is also yet to be decided, with the options being between a small-sat or mission being hosted aboard the ISS. Ideally the hardware design is mission agnostic, as both options face similar constraints, mainly independence/automation (satellite cant be interacted with once launched and very high labor cost upon the ISS), however ISS may have easier constraints for atmosphere.
 
 = Previous missions
 This list is not exhaustive and will mostly focus on plant based biological samples, but bacteria and bioscience experiments will be listed for completeness. 
@@ -74,6 +69,8 @@ https://2015.igem.org/Team:UNIK_Copenhagen/Description
 = Outline of hardware
 
 == Temperature control
+
+
 
 === Heating
 
