@@ -1,0 +1,3 @@
+- [ ] Research prev missions
+- [ ] Temp control write-up
+- [ ] Vibration write-up
