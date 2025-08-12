@@ -25,7 +25,7 @@
 
 = Mission idea
 
-To test the specimen in a space environment, Plants for Space wishes to transport a sample and test equipment into a microgravity environment. To do this supporting hardware will be needed (covered later in this document). The sample is expected to be a genetically modified piece of moss (#highlight[get exact species]) that is to express a designed response to a specified stimuli. These are yet to be decided but some early ideas for stimuli (Temperature change) and response (Colour change, growth response, chemical production). The exact mechanisms will need to be simple, lightweight and ideally using existing hardware.
+To test the specimen in a space environment, Plants for Space wishes to transport a sample and test equipment into a microgravity environment. To do this supporting hardware will be needed (covered later in this document). The sample is expected to be a genetically modified piece of moss (Physcomitrella patens) that is to express a designed response to a specified stimuli. These are yet to be decided but some early ideas for stimuli (Temperature change) and response (Colour change, growth response, chemical production). The exact mechanisms will need to be simple, lightweight and ideally using existing hardware.
 
 The method of transport for the mission is also yet to be decided, with the options being between a small-sat or mission being hosted aboard the ISS. Ideally the hardware design is mission agnostic, as both options face similar constraints, mainly independence/automation (satellite cant be interacted with once launched and very high labor cost upon the ISS), however ISS may have easier constraints for atmosphere.
 
@@ -55,9 +55,12 @@ https://www.eoportal.org/satellite-missions/sporesat#spacecraft
 == ISS
 VEGGIE-1, 2 & 3. APH (Advanced Plant Habitat)
 
-== EuCROPIS
+== EuCROPIS 2018
+EuCROPIS aimed to study the feasibility of growing plants (specifically tomatoes) in a closed loop system (turning urine into fertilizer and then into food) under different gravity conditions (simulated lunar and martian gravity). The system contained an extensive sensing suite, having multiple cameras to record growth, chemical sensors to record plant related compounds (ammonium, nitrite, nitrate, pH, chloride, sodium and potassium), RAMIS (RAdiation Measurement In Space), humidity, temperature, and a mRNA Expression analysis system to analyse how the microgravity altered various gene expressions. @Hauslage_2018
 
 == Chang'e 4 "biosphere"
+Chang'e 4 was a lunar lander mission that deployed multiple payloads onto the far side of the moon. Among these payloads was a canister containing seeds for cotton, potato, rapeseed, Arabidopsis thaliana, as well as fruitfly larvae and yeast. The aim was that these organisms would act in synergy and produce/consume oxygen/CO2 for each other. The biosphere was a partial success, with sprouting recorded of the cotton, but a failure of the heating system meant it wasn't able to survive the lunar night. @Ye_2017
+
 
 == SpaceMoss
 https://2015.igem.org/Team:UNIK_Copenhagen/Description
@@ -104,6 +107,8 @@ Additionally, dampening can be used and measures can be taken to isolate the sam
 
 == Sensing
 
+
+
 === Imaging
 
 === Lab on a chip? or other chemical detection
@@ -119,4 +124,4 @@ Things like radiation sensors, plant health (if this can be measured), atmospher
 == ISS experiment 
 
 
-#bibliography("./ref.bib")
+#bibliography("./ref.bib", style:"ieee")
