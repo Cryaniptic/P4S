@@ -79,7 +79,7 @@ Spacecraft typically contain an assortment of temperature critical components. L
 
 === Heating 
 
-Considering that this mission will aim for smaller mission platforms, heating will likely be required, however with insulation and the relatively forgiving temperature range this should be very simple to achieve.
+Considering that this mission will aim for smaller mission platforms, heating will likely be required, however with insulation and the relatively forgiving temperature range this should be very simple to achieve. A simple resistive heater placed near the sample with a controller should suffice.
 
 === Cooling
 
@@ -93,7 +93,7 @@ A concern raised early on in discussions was the transport of the sample, as wai
 
 The sample will want an atmosphere that mimics that of earths to maintain healthy condition, supplying gasses such as CO2 and Oxygen. These will be consumed over the duration of the mission, however variables such as rate of consumption, ideal mixture, and pressure are all unknown and will need testing. Ideally the sample can survive on a small volume of atmosphere long enough to run the mission.
 
-Additionally depending on the mission launch provider, more testing will need to be done as well as certification to launch a pressurised container.
+Additionally depending on the mission launch provider, more testing/validation will need to be done as well as certification to launch a pressurised container. This will likely be a significant cost factor in the project.
 
 == Vibration
 
@@ -103,15 +103,23 @@ And early idea floated was using a thick layer of agar, similar to the kind used
 
 Another idea could be to grow the moss sample into a porous substrate to more securely anchor it down.
 
-Additionally, dampening can be used and measures can be taken to isolate the sample/payload.
+Additionally, dampening can be used and measures can be taken to isolate the sample/payload from the vibrations of the launch.
 
 == Sensing
 
-
+Sensing is a critical part of the mission, as this will be how results will be obtained and mission success/failure is determined from results gathered. Many forms of sensing exist, however selecting a specific method will be about finding an intersection between feasibility of engineering of both biological and technical. 
 
 === Imaging
 
+Imaging with some sort of camera will likely be a high priority, even aside from it being used as a sensing tool. A camera allows for a great deal of diagnostics to be done, such as verifying sample conditions. It also will be desirable for more marketing/publication reasons, as a cool picture of an experiment can speak a thousand words.
+
+Small lightweight cameras have greatly developed thanks to smartphones, and the camera will likely be inside the pressurised container, making it simpler to find a suitable model. The main challenge will be selecting something with a short focal length, as we will need to keep the assembly compact, and will want the camera as close to the sample as possible. Perhaps a macro lens or some sort of microscope like camera may want to be used to allow for observation of the structure of the moss/resolving fine details.
+
+Additionally with one of the detection methods proposed being fluorescence, the camera would also need an accompanying UV illuminator.
+
 === Lab on a chip? or other chemical detection
+
+Lab on a chip technology has developed greatly, and has been used before in biological space missions due to its lightweight, advanced sensing capabilities. Often paired with microfluidics, these systems ar
 
 === Additional sensing capabilities?
 
