@@ -14,7 +14,7 @@
   affiliations: (
     "P4S": "ARC Centres of Excellence in Plants for Space and Plant Energy Biology" ,
   ),
-  abstract: [This document aims to study previous and upcoming space missions that involved biological samples, to understand the hardware, procedures and aspects needed for such a mission. Additionally this document serves as a technical bridge and will try to break down some of the engineering aspects for other disciplines, as well as recommend feasibility and try to realise aspects of a proposed similar mission by the Plants for Space center.],
+  abstract: [This document aims to study previous and upcoming space missions that involved biological samples to understand the hardware, procedures and aspects needed for such a mission. Additionally this document serves as a technical bridge and will attempt to break down some of the engineering aspects for other disciplines, as well as recommend feasibility and attempt to realise aspects of a proposed similar mission by the Plants for Space center.],
   //keywords: ("Typst", "Journal Article")
 )
 
@@ -26,7 +26,7 @@
 
 = Mission idea
 
-To test the specimen in a space environment, Plants for Space wishes to transport a sample and test equipment into a microgravity environment. To do this supporting hardware will be needed (covered later in this document). The sample is expected to be a genetically modified piece of moss (#link("https://en.wikipedia.org/wiki/Physcomitrella_patens")[Physcomitrella patens]) that is to express a designed response to a specified stimuli. These are yet to be decided but some early ideas for stimuli (Temperature change) and response (Colour change, growth response, chemical production). The exact mechanisms will need to be simple, lightweight and ideally using hardware that will be aboard the mission already.
+To test the specimen in a space environment, Plants for Space wishes to transport a sample along with test equipment into a microgravity environment. To do this, supporting hardware will be needed (covered later in this document). The sample is expected to be a genetically modified piece of moss (#link("https://en.wikipedia.org/wiki/Physcomitrella_patens")[Physcomitrella patens]) that is to express a designed response to a specified stimuli. These are yet to be decided but some early ideas are temperature change for stimuli and colour change, growth or chemical production as possible responses. The exact mechanisms will need to be simple, lightweight and ideally using hardware that will be aboard the mission already.
 
 The mission would involve a sample being stored aboard a card that contains all necessary life support, monitoring and testing systems. This could then be adapted to suit a variety of mission delivery systems (cubesat/smallsat, ISS mission).
 
@@ -104,19 +104,23 @@ https://2015.igem.org/Team:UNIK_Copenhagen/Description
 
 == Temperature control
 
-Temperatures in a space environment are determined by a number of factors and can vary across a wide range, as well as change in a short time period. For a cubesat in LEO its period would be from 90 to 120 minutes, with it being in sunlight half the time and earth occlusion the other half. Mass of the satellite also plays a large role in thermal balance, as larger craft will take longer to heat up/cool down, and will therefor have a more stable temperature. Due to these large amount of factors it is difficult to claim certain temperature ranges experienced by a satellite, however we can compare similar craft in orbits we are targeting. MinXSS-1 (2016) made their estimated and recorded temperature ranges publicly available @MinXSS, for their 3U cubesat in an equatorial low earth orbit. The most central electronics (motherboard, power systems) experienced a temperature range from -1°C to +40°C, where as systems with a higher thermal mass (batteries) experienced only +10°C to +21°C.
+Temperatures in a space environment are determined by a number of factors and can vary across a wide range, as well as change in a short time period. For a cubesat in LEO its period would be from 90 to 120 minutes, with it being in sunlight half the time and earth occlusion the other half. Mass of the satellite also plays a large role in thermal balance, as larger craft will take longer to heat up/cool down, and will therefor have a more stable temperature. Due to these factors it is difficult to claim certain temperature ranges experienced by a satellite, however we can compare similar craft in orbits we are targeting. MinXSS-1 (2016) made their estimated and recorded temperature ranges publicly available @MinXSS, for their 3U cubesat in an equatorial low earth orbit. The most central electronics (motherboard, power systems) experienced a temperature range from -1°C to +40°C, where as systems with a higher thermal mass (batteries) experienced only +10°C to +21°C.
 
 Spacecraft typically contain an assortment of temperature critical components. Lithium-ion batteries for example will reduce in effectiveness and eventually stop working in colder environments, and so will often come with heating systems to keep them within their operational range (~0°C to 45°C for best performance). Some subsystems (i.e. high end optics or scientific equipment) are the opposite, and need very low temperatures. These systems make use of radiators and in some extreme cases will use technology such as heat pumps to achieve localised very low temperatures.
 
+The sample itself will ideally be kept around room temperature (24°C to 26°C), with stability of the temperature being ideal for the comfort of the moss.
+
 === Heating 
 
-Considering that this mission will aim for smaller mission platforms, heating will likely be required, however with insulation and the relatively forgiving temperature range this should be very simple to achieve. A simple resistive heater placed near the sample with a controller should suffice.
+Considering that this mission will aim for smaller mission platforms, heating will likely be required, however with insulation and the relatively forgiving temperature point, this should be very simple to achieve. A simple resistive heater placed near the sample with a controller should suffice.
+
+As the sample will want a tight temperature range as well as an adjustment to the temperature being a likely stimuli, the controller will likely be more advanced, such as a PID loop. This would allow the flight computer or other controller to adjust the temperature set point according to a mission profile. 
 
 === Cooling
 
 Cooling may be needed, depending on the survival/comfort range of the sample. Once more details are known about mission (satellite size, target orbit, insulation) thermal simulations can be run and cooling requirements can be reassessed. Due to relaxed cooling needs compared to other space systems (such as very low temperature optics) increasing cooling capabilities should be as simple as increasing thermal emissivity (though the use of radiators or type of coating). In an extreme case active systems such as peltier modules may be used, as these are low cost, simple solutions to cooling needs.
 
-A concern raised early on in discussions was the transport of the sample, as waiting stages of the sample (such as in the fairing before launch) could be prone to overheating.
+A concern raised early on in discussions was the transport of the sample, as waiting stages of the sample (such as in the fairing before launch) could be prone to overheating. Additionally accidental triggering of the stimuli want to be avoided, so it should be made sure that the temperature should go above a threshold unless specifically desired.
 
 == Atmospheric control
 
@@ -150,7 +154,7 @@ Additionally with one of the detection methods proposed being fluorescence, the 
 
 Lab on a chip technology has developed greatly, and has been used before in biological space missions due to its lightweight, advanced sensing capabilities. Often paired with microfluidics, these systems are capable of performing advanced procedures that would typically take a much larger laboratory setup.
 
-This being said, early on into the project it was decided microfluidics would be avoided, due to lack of experience with the technology from most of the team.
+This being said, early on into the project it was decided microfluidics would be avoided, due to complexity and lack of experience with the technology from most of the team.
 
 === Additional sensing capabilities?
 
@@ -165,10 +169,5 @@ The main focus on development will be the payload system, as we will be handing 
 Early on development will likely focus on building on-ground systems/tools to assist the biology focused branches of this project, to gather data and experience on life support systems, as well as build the system in parts.
 
 The method of transport for the mission is also yet to be decided, but is almost guaranteed to be some sort of ride-share with other missions.
-
-== Satellite (cube or share on larger sat)
-
-== ISS experiment 
-
 
 #bibliography("./ref.bib", style:"ieee")
